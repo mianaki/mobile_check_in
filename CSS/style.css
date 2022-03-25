@@ -1,0 +1,631 @@
+
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    background: #8ecae6;
+  }
+
+header{
+    /* background-image: url("../images/sunset-bg.jpg"); */
+    background-color: #ffb703;
+    font-family: 'Ramaraja', serif;
+}
+
+.intro{
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+ p{
+     padding-top: 5px;
+     padding-bottom: 10px;
+ } 
+
+h1{
+    padding-top:45px;
+    text-align:center;
+    font-size: 30px;
+    padding-bottom: 40px;
+    font-family: 'Ramaraja', serif;
+}
+
+h2{
+    font-size: 30px;;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: 'Ramaraja', serif;
+    color: #023047;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 1px, solid, #1a1a1a;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+/* HOME PAGE PLACEMENT */
+
+@keyframes move{
+    from {width: 25px;
+        opacity: 0;}
+    to { width:100%;
+        opacity: 1;}
+}
+
+.photo img{
+    width: auto;
+    animation: move 5s;
+}
+
+.photo h2{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.photo2 img{
+    width: auto;
+}
+
+.photo2 h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav{
+    background-color: #023047;
+    height: 120px;
+    font-weight: bold;
+    font-family: Georgia;
+    text-align: center;
+  }
+  
+  nav ul{
+   margin: 0;
+   padding: 0;  
+  }
+  
+  nav ul li{
+    text-align: center;
+    list-style-type: none;
+  }
+
+  li a{
+    text-decoration: none;
+    display: block;
+    text-align:center;
+  }
+
+a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #8ecae6;
+    color:rgb(7, 59, 102);
+}
+
+.active{
+    background-color: rgb(7, 59, 102);
+    color: white;
+}
+
+footer{
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(7, 59, 102);
+}
+
+a.skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+/* FORM CSS MOBILE/ DEFAULT VIEW */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #023047;
+    color: white;
+    padding: 25px;
+    margin: 100px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+
+#contact button[type="submit"]:hover {
+    background: #e85d04;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #fb8500;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+    
+  .form_container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+  }
+
+/* RESTAURANT & COOKING PAGES FLEX CSS MOBILE*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-between; 
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.card{
+    background-image: url("../images/lighter-bg.jpg");
+    background-color: white;
+    border-radius: 6px;
+    margin: 15px;
+    padding: 15px 15px 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.card h2{
+    font-size: 18px;
+    font-family: poppins;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.insp-container{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20%; */
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.chunk1, .chunk2, .chunk3{
+    font-size: 16px;
+    padding: 1rem;
+}
+
+/* .chunk1{
+    grid-column: 2/4;
+    grid-row: 1/ span 1;
+}
+
+.chunk2{
+    grid-column: 1/3;
+    grid-row: 2/ span 1;
+}
+
+.chunk3{
+    grid-column: 2/4;
+    grid-row: 3/ span 1;
+} */
+
+.moribyan-pic, .shwarma-pic, .noodle-pic{
+    justify-self: center;
+}
+
+
+@media screen and (min-width: 900px){
+
+ nav{
+    background-color: #023047;
+    height: 50px;
+    font-weight: bold;
+    font-family: Georgia;
+    text-align: center;
+    }
+      
+nav ul{
+    margin: 0;
+    padding: 0;  
+    }
+      
+nav ul li{
+    text-align: center;
+    list-style-type: none;
+    width:25%;
+    float:left;
+    margin-left: auto;
+    margin-right: auto;
+      }
+    
+li a{
+    text-decoration: none;
+    display: block;
+    line-height:50px;
+    text-align:center;
+    }
+      
+/* INDEX GRID CSS */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 35px;
+}
+
+.intro-text{
+    grid-column: 2/4;
+    grid-row: 1 / span 1;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.bio-text{
+    grid-column: 2/4;
+    grid-row: 2 / span 1;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 60px;
+  }
+
+.photo{
+    grid-row: 1 / span 1;
+    margin-top: 24px;
+    font-size: 24px;
+} 
+
+.photo img{
+    width: auto;
+}
+
+.photo2{
+    grid-row: 2 / span 1;
+    margin-top: 35px;
+    font-size: 24px;
+}
+
+.photo2 img{
+    width: 300px;
+}
+
+/* RESTAURANT & COOKING PAGES FLEX CSS */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-between; 
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.card{
+    flex-basis: 400px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 6px;
+    margin: 15px;
+    padding: 15px 15px 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.card h2{
+    font-size: 16px;
+}
+
+/* INSPIRATION PAGE GRID CSS */
+.insp-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 35px;
+}
+
+.chunk1, .chunk2, .chunk3{
+    font-size: 20px;
+}
+
+
+.chunk1{
+    grid-column: 2/4;
+    grid-row: 1/ span 1;
+}
+
+.chunk2{
+    grid-column: 1/3;
+    grid-row: 2/ span 1;
+}
+
+.chunk3{
+    grid-column: 2/4;
+    grid-row: 3/ span 1;
+}
+
+  /* FORM CSS */  
+  
+  .form_container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+.loop-wrapper {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 250px;
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+  .mountain {
+    position: absolute;
+    right: -900px;
+    bottom: -20px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      0 0 0 50px #4DB6AC,
+      60px 50px 0 70px #4DB6AC,
+      90px 90px 0 50px #4DB6AC,
+      250px 250px 0 50px #4DB6AC,
+      290px 320px 0 50px #4DB6AC,
+      320px 400px 0 50px #4DB6AC
+      ;
+    transform: rotate(130deg);
+    animation: mtn 20s linear infinite;
+  }
+  .hill {
+    position: absolute;
+    right: -900px;
+    bottom: -50px;
+    width: 400px;
+    border-radius: 50%;
+    height: 20px;
+    box-shadow: 
+      0 0 0 50px #4DB6AC,
+      -20px 0 0 20px #4DB6AC,
+      -90px 0 0 50px #4DB6AC,
+      250px 0 0 50px #4DB6AC,
+      290px 0 0 50px #4DB6AC,
+      620px 0 0 50px #4DB6AC;
+    animation: hill 4s 2s linear infinite;
+  }
+  .tree, .tree:nth-child(2), .tree:nth-child(3) {
+    position: absolute;
+    height: 100px; 
+    width: 35px;
+    bottom: 0;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/tree.svg) no-repeat;
+  }
+  .rock {
+    margin-top: -17%;
+    height: 2%; 
+    width: 2%;
+    bottom: -2px;
+    border-radius: 20px;
+    position: absolute;
+    background: #ddd;
+  }
+  .truck, .wheels {
+    transition: all ease;
+    width: 85px;
+    margin-right: -60px;
+    bottom: 0px;
+    right: 50%;
+    position: absolute;
+    background: #eee;
+  }
+  .truck {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/truck.svg) no-repeat;
+    background-size: contain;
+    height: 60px;
+  }
+  .truck:before {
+    content: " ";
+    position: absolute;
+    width: 25px;
+    box-shadow:
+      -30px 28px 0 1.5px #fff,
+       -35px 18px 0 1.5px #fff;
+  }
+  .wheels {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/wheels.svg) no-repeat;
+    height: 15px;
+    margin-bottom: 0;
+  }
+  
+  .tree  { animation: tree 3s 0.000s linear infinite; }
+  .tree:nth-child(2)  { animation: tree2 2s 0.150s linear infinite; }
+  .tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
+  .rock  { animation: rock 4s   -0.530s linear infinite; }
+  .truck  { animation: truck 4s   0.080s ease infinite; }
+  .wheels  { animation: truck 4s   0.001s ease infinite; }
+  .truck:before { animation: wind 1.5s   0.000s ease infinite; }
+  
+  
+  @keyframes tree {
+    0%   { transform: translate(1350px); }
+    50% {}
+    100% { transform: translate(-50px); }
+  }
+  @keyframes tree2 {
+    0%   { transform: translate(650px); }
+    50% {}
+    100% { transform: translate(-50px); }
+  }
+  @keyframes tree3 {
+    0%   { transform: translate(2750px); }
+    50% {}
+    100% { transform: translate(-50px); }
+  }
+  
+  @keyframes rock {
+    0%   { right: -200px; }
+    100% { right: 2000px; }
+  }
+  @keyframes truck {
+    0%   { }
+    6%   { transform: translateY(0px); }
+    7%   { transform: translateY(-6px); }
+    9%   { transform: translateY(0px); }
+    10%   { transform: translateY(-1px); }
+    11%   { transform: translateY(0px); }
+    100%   { }
+  }
+  @keyframes wind {
+    0%   {  }
+    50%   { transform: translateY(3px) }
+    100%   { }
+  }
+  @keyframes mtn {
+    100% {
+      transform: translateX(-2000px) rotate(130deg);
+    }
+  }
+  @keyframes hill {
+    100% {
+      transform: translateX(-2000px);
+    }
+  }
+}
+  
+
